@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "concurrently": "^9.0.1",
+    "laravel-vite-plugin": "^3.1",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "@inertiajs/vue3": "^2.0.0",
+    "@primeuix/themes": "^2.0.3",
+    "@primevue/forms": "^4.5.5",
+    "@vueuse/core": "^14.3.0",
+    "dayjs": "^1.11.21",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.5.5",
+    "sweetalert2": "^11.26.25",
+    "vue": "^3.5.39"
+  }
+}
