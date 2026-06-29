@@ -10,4 +10,14 @@ class UserRepository extends BaseRepository
     {
         parent::__construct($user);
     }
+
+    public function search(array $filters = [])
+    {
+        return $this->query()
+            ->when(!empty($filters['keyword']), function ($query) use ($filters) {
+                $query->where('name', 'like', '%' . $filters['keyword'] . '%');
+            })
+            ->latest()
+            ->paginate($filters['per_page'] ?? 15);
+    }
 }
